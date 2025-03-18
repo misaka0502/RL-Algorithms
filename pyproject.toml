@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rl_algorithms"
+version = "0.1.0"
+authors = [
+    {name = "YuMio", email = "1308103021@qq.com"}
+]
+license = {text = "MIT"}
+
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.19.0",
+    "torch>=1.8.0",
+    "matplotlib>=3.3.0",
+    "seaborn>=0.11.0"
+]
+[tool.setuptools]
+packages = ["algorithm", "enviroment", "utils"]
+package-dir = {"" = "src"}
